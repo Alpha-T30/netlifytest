@@ -15,7 +15,7 @@ function App() {
     console.log(numRef.current.value)
    
     try {
-      const res= await axios.post("/api/square/",{num: numRef.current.value}) ; 
+      const res= await axios.post("https://nodeservertrt.herokuapp.com/api/square/",{num: numRef.current.value}) ; 
   setNum(res.data) ; 
   formRef.current.reset() ; 
  
